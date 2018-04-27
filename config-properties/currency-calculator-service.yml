@@ -6,4 +6,5 @@ currency-exchange-service:
 
 eureka:
   client:
-    service-url: http://localhost:8761
+    service-url:
+      default-zone: http://localhost:8761/eureka
