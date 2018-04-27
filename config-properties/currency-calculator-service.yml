@@ -1,0 +1,3 @@
+currency-exchange-service:
+  name: currency-exchange-service
+  endpoint: http://localhost:8201/currency-exchange

@@ -8,7 +8,7 @@ public class ConversionResponseDto {
         private String from;
         private String to;
         private String exchangeRate;
-        private int quantity;
+        private String quantity;
         private String result;
 
 }
