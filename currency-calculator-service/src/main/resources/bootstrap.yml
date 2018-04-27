@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: currency-calculator-service
+server:
+  port: 8301
