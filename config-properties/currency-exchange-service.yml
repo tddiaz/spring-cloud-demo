@@ -4,3 +4,7 @@ spring:
   h2:
     console:
       enabled: true
+
+eureka:
+  client:
+    service-url: http://localhost:8761
