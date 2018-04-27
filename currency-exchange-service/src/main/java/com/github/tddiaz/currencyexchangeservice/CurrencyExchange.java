@@ -1,7 +1,6 @@
 package com.github.tddiaz.currencyexchangeservice;
 
 import lombok.Data;
-import lombok.NonNull;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -15,14 +14,20 @@ public class CurrencyExchange {
     private Long id;
 
     @Column(name = "currency_from")
-    @NonNull
     private String from;
 
     @Column(name = "currency_to")
-    @NonNull
     private String to;
 
-    @NonNull
     private BigDecimal value;
 
+    public CurrencyExchange() {
+
+    }
+
+    public CurrencyExchange(String from, String to, BigDecimal value) {
+        this.from = from;
+        this.to = to;
+        this.value = value;
+    }
 }

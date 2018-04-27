@@ -34,5 +34,7 @@ class DataBootstrap implements ApplicationContextAware {
 		log.info("bootstraping database..");
 		currencyExchangeRepository.save(new CurrencyExchange("USD", "PHP", new BigDecimal(50)));
 		currencyExchangeRepository.save(new CurrencyExchange("PHP", "USD", new BigDecimal(1)));
+
+
 	}
 }
