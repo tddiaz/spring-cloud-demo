@@ -33,7 +33,7 @@ class DataBootstrap implements ApplicationContextAware {
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		log.info("bootstraping database..");
 		currencyExchangeRepository.save(new CurrencyExchange("USD", "PHP", new BigDecimal(50)));
-		currencyExchangeRepository.save(new CurrencyExchange("PHP", "USD", new BigDecimal(1)));
+		currencyExchangeRepository.save(new CurrencyExchange("PHP", "USD", new BigDecimal(0.02)));
 
 
 	}
