@@ -1,4 +1,4 @@
 currency-exchange-service:
   name: currency-exchange-service
   ribbon:
-    endpoints: http://localhost:8201/currency-exchange,http://localhost:8202/currency-exchange
+    listOfServers: http://localhost:8201/currency-exchange,http://localhost:8202/currency-exchange
