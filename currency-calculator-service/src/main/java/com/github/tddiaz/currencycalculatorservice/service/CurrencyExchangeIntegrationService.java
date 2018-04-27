@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RibbonClient(name = "${currency-exchange-service.name}")
 public interface CurrencyExchangeIntegrationService {
 
-    @GetMapping
+    @GetMapping("${currency-exchange-service.path}")
     CurrencyExchangeDto getExchangeRate(@RequestParam("from") String from, @RequestParam("to") String to);
 }
