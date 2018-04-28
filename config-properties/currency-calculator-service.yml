@@ -1,8 +1,8 @@
 currency-exchange-service:
   name: currency-exchange-service
   path: /currency-exchange
-  ribbon:
-    listOfServers: http://localhost:8201,http://localhost:8202
+#  ribbon:
+#    listOfServers: http://localhost:8201,http://localhost:8202
 
 eureka:
   client:
