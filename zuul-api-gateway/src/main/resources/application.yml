@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: api-gateway-service
+server:
+  port: 8765
